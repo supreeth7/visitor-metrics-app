@@ -13,14 +13,14 @@ spec:
       labels:
         app: visitors
         tier: frontend
-  spec:
-    containers:
-      - name: visitors-frontend
-        image: "jdob/visitors-webui:1.0.0"
-        imagePullPolicy: Always
-        ports:
-          - name: visitors
-            containerPort: 3000
-        env:
-          - name: REACT_APP_TITLE
-            value: "Visitors Dashboard"
+    spec:
+      containers:
+        - name: visitors-frontend
+          image: "jdob/visitors-webui:1.0.0"
+          imagePullPolicy: Always
+          ports:
+            - name: visitors
+              containerPort: 3000
+          env:
+            - name: REACT_APP_TITLE
+              value: "Visitors Dashboard"
