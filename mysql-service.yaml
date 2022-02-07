@@ -5,10 +5,10 @@ metadata:
   labels:
     app: visitors
     tier: mysql
-  spec:
-    clusterIP: None
-    ports:
-      - port: 3306
-    selector:
-      app: visitors
-      tier: mysql
+spec:
+  clusterIP: None
+  ports:
+    - port: 3306
+  selector:
+    app: visitors
+    tier: mysql
